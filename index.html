@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo App</h1>
+        
+        <!-- New Todo Input Section -->
+        <div class="new-todo-section">
+            <div class="input-group">
+                <label for="todo-input">New Todo:</label>
+                <input 
+                    type="text" 
+                    id="todo-input" 
+                    placeholder="輸入新的 todo 名稱"
+                >
+            </div>
+            <div class="input-group">
+                <label for="description-input">Description:</label>
+                <textarea 
+                    id="description-input" 
+                    placeholder="輸入這個 todo 的 description"
+                    rows="3"
+                ></textarea>
+            </div>
+            <button id="add-btn">Add Todo</button>
+        </div>
+
+        <!-- Todo Items List -->
+        <div class="todo-list" id="todo-list">
+            <!-- Todo items will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
